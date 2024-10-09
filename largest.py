@@ -20,7 +20,7 @@ def main():
     fibo_list = fibonacci(args.limit)
     for i in range(len(fibo_list)-1, -1, -1):
         if is_prime(fibo_list[i]):
-            print(f"Largest prime number less than {args.limit}: {fibo_list[i]}")
+            print(f"Largest Prime Fibonacci number less than {args.limit}: {fibo_list[i]}")
             break
 
 if __name__ == '__main__':
