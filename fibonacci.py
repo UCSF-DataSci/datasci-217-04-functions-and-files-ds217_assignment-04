@@ -7,6 +7,8 @@ def fibonacci(limit):
         if next_fib >= limit:
             break
         fib_list.append(next_fib)
+    if fib_list[1] == fib_list[2]:
+        fib_list.pop(1)
     return fib_list
 
 
