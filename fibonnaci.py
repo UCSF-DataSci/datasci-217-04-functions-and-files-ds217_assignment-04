@@ -47,12 +47,12 @@ if __name__ == "__main__":
 
 	#printing results in command line w argparsed values
     result = some_function(args.upper_limit)
-    print(f"the Fibonacci numbers less than 100 are: {result}")
+    print(f"the Fibonacci numbers less than {args.upper_limit} are: {result}")
 
 	#printing results to file (named w argparse)
     out_file = "fibonacci_100.txt"
     with open(args.output_file, 'w') as f:
-        print(f"The Fibonacci numbers less than limit 100:", file=f)
+        print(f"The Fibonacci numbers less than",args.upper_limit, file=f)
         print(result, file=f)
 
 
