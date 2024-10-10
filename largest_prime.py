@@ -27,7 +27,7 @@ def is_prime(number):
     return True
 
 def find_largest_prime_fibonacci(limit):
-    """Finds the largest prime number in the Fibonacci sequence below the given limit."""
+    """This function finds the largest prime number in the Fibonacci sequence below the given limit."""
     fibonacci_sequence = generate_fibonacci(limit)
     prime_fib_numbers = [num for num in fibonacci_sequence if is_prime(num)]
     
